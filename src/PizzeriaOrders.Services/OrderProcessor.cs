@@ -105,11 +105,11 @@ public class OrderProcessor : IOrderProcessor
         _logger.LogInformation($"Total VAT Amount for Valid Orders: {validOrders?.Sum(o => o.VATAmount):C2}");
         _logger.LogInformation($"Total Price for Valid Orders: {validOrders?.Sum(o => o.TotalPrice):C2}");
 
+        _logger.LogInformation($"******************************************************************************");
+        _logger.LogInformation($"Aggregating ingredients from valid orders...");
         var totalIngredients = _aggregator.Aggregate(validOrders);
         if (totalIngredients != null || totalIngredients?.Count > 0)
         {
-            _logger.LogInformation($"******************************************************************************");
-            _logger.LogInformation($"Aggregating ingredients from valid orders...");
             _logger.LogInformation($"Total ingredients aggregated from valid orders: {totalIngredients?.Count}");
             _logger.LogInformation($"----------------------------------------------------------------------------");
             _logger.LogInformation($"Ingredients:");
@@ -117,6 +117,10 @@ public class OrderProcessor : IOrderProcessor
             {
                 _logger.LogInformation($"Ingredient: {ingredient.Key}, Quantity: {ingredient.Value.Quantity} {ingredient.Value.Units}");
             }
+        }
+        else
+        {
+            _logger.LogWarning("No ingredients aggregated from valid orders.");
         }
 
         _logger.LogInformation($"******************************************************************************");

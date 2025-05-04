@@ -59,7 +59,7 @@ public class IngredientAggregator : IIngredientAggregator
                             kvp.Value.Quantity = kvp.Value.Quantity * product.Quantity;
                             totalIngredients[kvp.Key] = kvp.Value;
                         }
-                        _logger.LogInformation($"Total ingredients now: {string.Join(", ", totalIngredients.Select(kvp => $"{kvp.Key}: {totalIngredients[kvp.Key].Quantity}"))} {totalIngredients[kvp.Key].Units}");
+                        _logger.LogInformation($"Total ingredients now: {string.Join(", ", totalIngredients.Select(kvp => $"{kvp.Key}: {totalIngredients[kvp.Key].Quantity} {totalIngredients[kvp.Key].Units}"))}");
                     }
                     _logger.LogInformation($"Total ingredients after processing product {product.ProductId}: {string.Join(", ", totalIngredients.Select(kvp => $"{kvp.Key}: {totalIngredients[kvp.Key].Quantity} {totalIngredients[kvp.Key].Units}"))}");
                 }
