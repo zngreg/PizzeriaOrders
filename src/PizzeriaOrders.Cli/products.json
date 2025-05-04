@@ -1,0 +1,14 @@
+[
+    {
+        "ProductId": "PZ001",
+        "ProductName": "Margherita",
+        "Price": 80,
+        "VAT": 15
+    },
+    {
+        "ProductId": "PZ002",
+        "ProductName": "Pepperoni",
+        "Price": 100,
+        "VAT": 15
+    }
+]

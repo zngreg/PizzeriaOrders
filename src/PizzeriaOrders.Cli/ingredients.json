@@ -1,0 +1,77 @@
+[
+  {
+    "ProductId": "PZ001",
+    "Ingredients": {
+      "Cheese": {
+        "Quantity": 0.2,
+        "Units": "Kilograms",
+        "Type": "Dairy"
+      },
+      "Tomato": {
+        "Quantity": 0.1,
+        "Units": "Kilograms",
+        "Type": "Vegetable"
+      }
+    }
+  },
+  {
+    "ProductId": "PZ002",
+    "Ingredients": {
+      "Pepperoni": {
+        "Quantity": 0.3,
+        "Units": "Kilograms",
+        "Type": "Meat"
+      },
+      "Cheese": {
+        "Quantity": 0.2,
+        "Units": "Kilograms",
+        "Type": "Dairy"
+      }
+    }
+  },
+  {
+    "ProductId": "PZ003",
+    "Ingredients": {
+      "Mushrooms": {
+        "Quantity": 0.1,
+        "Units": "Kilograms",
+        "Type": "Vegetable"
+      },
+      "Olives": {
+        "Quantity": 0.05,
+        "Units": "Kilograms",
+        "Type": "Vegetable"
+      }
+    }
+  },
+  {
+    "ProductId": "PZ004",
+    "Ingredients": {
+      "Chicken": {
+        "Quantity": 0.25,
+        "Units": "Kilograms",
+        "Type": "Meat"
+      },
+      "Cheese": {
+        "Quantity": 0.2,
+        "Units": "Kilograms",
+        "Type": "Dairy"
+      }
+    }
+  },
+  {
+    "ProductId": "PZ005",
+    "Ingredients": {
+      "Spinach": {
+        "Quantity": 0.1,
+        "Units": "Kilograms",
+        "Type": "Vegetable"
+      },
+      "Feta Cheese": {
+        "Quantity": 0.15,
+        "Units": "Kilograms",
+        "Type": "Dairy"
+      }
+    }
+  }
+]
